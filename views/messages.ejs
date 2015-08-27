@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages</title>
+    <style>
+        body{
+            background: -webkit-linear-gradient(to top,rgba(255,255,255,0),rgba(128,128,128,.5)); /*Safari 5.1-6*/
+            background: -o-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,.5)); /*Opera 11.1-12*/
+            background: -moz-linear-gradient(top,rgba(255,0,0,0),rgba(255,0,0,.5)); /*Fx 3.6-15*/
+            background: linear-gradient(to top , rgba(255,255,255,0), rgba(128,128,128,.5)); /*Standard*/
+        }
+        .message {
+            margin: 5px auto;
+            background: red;
+
+        }
+        .adapter {
+            width: 100%;
+            mso-cellspacing: 0;
+        }
+        .adapter thead {
+            background: #808080;
+        }
+        .adapter thead th {
+            background: #dfa;
+            width: 100px;
+        }
+        .adapter tbody tr {
+            background: #ff00ff;
+
+        }
+        .adapter tbody tr:hover {
+           cursor: pointer;
+
+        }
+        .adapter tbody tr:nth-child(2n+1) {
+            background: #dfa;
+
+        }
+        .adapter tbody tr:nth-child(2n+1):hover {
+            background: #000000;
+            color: #ffffff ;
+            cursor: pointer;
+
+        }
+        .adapter thead th:nth-child(2n+1){
+            background: #808080;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="message">
+        <table class="adapter" cellpadding="0" border="0">
+            <thead><th>Date</th><th>Subject</th><th>From</th></thead>
+            <tbody>
+                <tr><td>1st Jan , 2015</td><td>To make a deal</td><td>Mehedi Hasan</td></tr>
+                <tr><td>1st Jan , 2015</td><td>To make a deal</td><td>Mehedi Hasan</td></tr>
+                <tr><td>1st Jan , 2015</td><td>To make a deal</td><td>Mehedi Hasan</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
