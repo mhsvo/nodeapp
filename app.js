@@ -12,7 +12,7 @@ app.get('/',routes.index);
 app.get('/content',routes.home.home);
 app.get('/contact',routes.contact);
 app.post('/receiveMessage',routes.receiveMessage);
-
+app.get('/about',routes.about);
 
 
 
